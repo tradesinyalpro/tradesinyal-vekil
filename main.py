@@ -2,7 +2,7 @@ from flask import Flask, request, Response
 import requests, os
 
 app = Flask(__name__)
-IZINLI = ("/fapi/v1/ticker/24hr", "/fapi/v1/ticker/price", "/fapi/v1/klines")
+IZINLI = ("/fapi/v1/ticker/24hr", "/fapi/v1/ticker/price", "/fapi/v1/klines", "/fapi/v1/exchangeInfo")
 
 @app.route("/<path:yol>")
 def vekil(yol):
